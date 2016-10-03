@@ -5,7 +5,7 @@ import org.apache.spark.streaming.{Seconds, StreamingContext}
 import org.apache.spark.{SparkConf, SparkContext}
 
 /**
-  * This is a sample application which works on custom reciever.
+  * This is a sample application which works on custom receiver.
   * Here we are using spark stream for reading data from file system.
   * It reads lines from file and prints lines which contains word 'programing'
   */
@@ -28,7 +28,7 @@ object SparkStreaming extends App{
   println(s"\n\nLines with word: ${queryWord} are as follows: ")
   res.print()
 
-  println("\nTotal occurances found:  ")
+  println("\nTotal occurrences found:  ")
   count.print()
 
   streamingContext.start()
